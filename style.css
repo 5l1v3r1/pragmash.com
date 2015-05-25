@@ -1,0 +1,126 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  color: #777;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+@keyframes slide-left {
+    from {
+      transform: translateX(50px);
+      -moz-transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      -moz-transform: none;
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    from {
+      -webkit-transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: none;
+      opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    from {
+      transform: translateX(-50px);
+      -moz-transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      -moz-transform: none;
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-right {
+    from {
+      -webkit-transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: none;
+      opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+      transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      -moz-transform: none;
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-up {
+    from {
+      -webkit-transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: none;
+      opacity: 1;
+    }
+}
+
+.line1 {
+  animation-name: slide-left;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: slide-left;
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.line2 {
+  transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  opacity: 0;
+  
+  animation-name: slide-right;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  -webkit-animation-name: slide-right;
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+}
+
+.line3 {
+  transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  opacity: 0;
+  
+  animation-name: slide-up;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+  -webkit-animation-name: slide-up;
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+}
