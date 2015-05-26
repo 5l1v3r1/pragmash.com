@@ -85,6 +85,11 @@ h2 {
 }
 
 .line1 {
+  transform: translateX(50px);
+  -moz-transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  opacity: 0;
+  
   animation-name: slide-left;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
@@ -118,7 +123,7 @@ h2 {
   animation-name: slide-up;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  animation-delay: 0.7s;
+  animation-delay: 0.8s;
   -webkit-animation-name: slide-up;
   -webkit-animation-duration: 1.0s;
   -webkit-animation-fill-mode: forwards;
