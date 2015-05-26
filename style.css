@@ -14,10 +14,12 @@ h1, h2 {
 
 h1 {
   font-size: 40px;
+  font-weight: normal;
 }
 
 h2 {
   font-size: 25px;
+  font-weight: lighter;
 }
 
 @keyframes slide-left {
